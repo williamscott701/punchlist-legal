@@ -4,34 +4,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · PunchList</title>
-<meta name="description" content="Site defect tracking with photo markup, for iOS.">
+<meta name="description" content="The defect list for a site walk: numbered tags, marked-up photos and one handover report.">
 <style>
-:root { color-scheme: light dark; --fg:#13161e; --muted:#555d71; --bg:#fdfdfc;
-        --accent:#1f5fa8; --rule:#e3e5ea; --panel:#f4f5f8; }
+:root { color-scheme: light dark; --fg:#16171a; --muted:#5b5d61; --bg:#e8e6e1;
+        --accent:#16171a; --rule:#cfcbc2; --panel:#f8f7f3; --hivis:#f5c400; }
 @media (prefers-color-scheme: dark) {
-  :root { --fg:#e7eaf1; --muted:#9ba3b5; --bg:#12141a; --accent:#7ea8e8;
-          --rule:#272d3a; --panel:#1a1e26; }
+  :root { --fg:#f1efea; --muted:#a6a8ac; --bg:#161719; --accent:#f5c400;
+          --rule:#3a3d42; --panel:#222427; }
 }
 * { box-sizing: border-box; }
 body { margin:0; background:var(--bg); color:var(--fg);
-       font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
        -webkit-text-size-adjust:100%; }
-main { max-width:44rem; margin:0 auto; padding:3rem 1.4rem 5rem; }
-h1 { font-size:2.1rem; line-height:1.2; letter-spacing:-0.02em; margin:0 0 1.4rem; }
-h2 { font-size:1.15rem; margin:2.4rem 0 0.6rem; letter-spacing:-0.01em; }
+body::before { content:""; display:block; height:12px;
+       background:repeating-linear-gradient(-45deg, var(--hivis) 0 12px, #16171a 12px 24px); }
+main { max-width:44rem; margin:0 auto; padding:2.6rem 1.2rem 5rem; }
+h1, h2 { font-family:"Avenir Next Condensed","Arial Narrow",-apple-system,sans-serif;
+         font-stretch:condensed; font-weight:800; text-transform:none; }
+h1 { font-size:2.4rem; line-height:1.1; letter-spacing:-0.01em; margin:0 0 1.2rem; }
+h2 { font-size:1.3rem; margin:2.2rem 0 0.6rem; padding-bottom:0.3rem; border-bottom:1px solid var(--rule); }
 p, li { color:var(--muted); margin:0 0 1rem; }
 ul { padding-left:1.2rem; margin:0 0 1rem; }
 li { margin:0 0 0.45rem; }
-a { color:var(--accent); }
+a { color:var(--accent); text-decoration-thickness:2px; text-underline-offset:3px; }
 strong { color:var(--fg); }
-nav { border-bottom:1px solid var(--rule); padding-bottom:1rem; margin-bottom:2.2rem;
-      font-size:0.95rem; }
-nav a { margin-right:1.2rem; text-decoration:none; }
+nav { padding-bottom:1rem; margin-bottom:2rem; font-size:0.95rem; border-bottom:1px solid var(--rule); }
+nav a { margin-right:1.1rem; text-decoration:none; font-weight:700;
+        font-family:"Avenir Next Condensed","Arial Narrow",sans-serif; letter-spacing:0.04em;
+        text-transform:uppercase; }
+nav a:first-child { background:var(--hivis); color:#16171a; padding:0.15rem 0.5rem; border-radius:3px; }
 footer { border-top:1px solid var(--rule); margin-top:3.5rem; padding-top:1.2rem;
          font-size:0.85rem; color:var(--muted); }
 .lede { font-size:1.15rem; color:var(--fg); }
-.panel { background:var(--panel); border:1px solid var(--rule); border-radius:10px;
-         padding:1.1rem 1.3rem; margin:0 0 1.2rem; }
+.panel { background:var(--panel); border:1px solid var(--rule); border-left:5px solid var(--hivis);
+         border-radius:4px; padding:1rem 1.2rem; margin:0 0 1.2rem; }
 .panel p:last-child, .panel ul:last-child { margin-bottom:0; }
 </style>
 </head>
@@ -51,7 +57,7 @@ footer { border-top:1px solid var(--rule); margin-top:3.5rem; padding-top:1.2rem
 <h2>Analytics and tracking</h2>
 <p>There are none. PunchList contains no analytics SDK, no advertising SDK, no crash reporter and no third-party code that reports on you. Nothing you do in the app is measured or transmitted. There is no tracking as defined by Apple&#x27;s App Tracking Transparency framework, so you will never see that prompt.</p>
 <h2>Subscriptions</h2>
-<p>PunchList Pro is sold as an auto-renewing subscription through Apple. Purchases are handled entirely by the App Store — the app asks Apple whether a valid subscription exists and receives a yes or no. Your payment details are never seen by, or available to, the app or the developer.</p>
+<p>The Handover Pack is sold as an auto-renewing subscription through Apple. Purchases are handled entirely by the App Store — the app asks Apple whether a valid subscription exists and receives a yes or no. Your payment details are never seen by, or available to, the app or the developer.</p>
 <p>Apple&#x27;s own handling of that transaction is covered by <a href="https://www.apple.com/legal/privacy/">Apple&#x27;s Privacy Policy</a>.</p>
 <h2>Network activity</h2>
 <p>The only network connections PunchList makes are to Apple&#x27;s App Store, to fetch subscription prices and verify entitlements. The app is otherwise fully functional with no connection at all, which is deliberate: building sites rarely have usable signal.</p>
@@ -66,7 +72,7 @@ footer { border-top:1px solid var(--rule); margin-top:3.5rem; padding-top:1.2rem
 <p>If this policy changes, the updated version will be published at <a href="https://williamscott701.github.io/punchlist-legal/privacy.html">the address below</a> and bundled into the next release of the app, with the date at the top revised.</p>
 <h2>Contact</h2>
 <p>Questions about privacy, or anything else, go to <strong>williamscott701@gmail.com</strong> and will get a reply, usually within two working days.</p>
-<footer>PunchList — Site defect tracking with photo markup, for iOS. These documents are also bundled inside the app.</footer>
+<footer>PunchList — The defect list for a site walk: numbered tags, marked-up photos and one handover report. These documents are also bundled inside the app.</footer>
 </main>
 </body>
 </html>

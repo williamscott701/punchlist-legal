@@ -4,42 +4,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support · PunchList</title>
-<meta name="description" content="Site defect tracking with photo markup, for iOS.">
+<meta name="description" content="The defect list for a site walk: numbered tags, marked-up photos and one handover report.">
 <style>
-:root { color-scheme: light dark; --fg:#13161e; --muted:#555d71; --bg:#fdfdfc;
-        --accent:#1f5fa8; --rule:#e3e5ea; --panel:#f4f5f8; }
+:root { color-scheme: light dark; --fg:#16171a; --muted:#5b5d61; --bg:#e8e6e1;
+        --accent:#16171a; --rule:#cfcbc2; --panel:#f8f7f3; --hivis:#f5c400; }
 @media (prefers-color-scheme: dark) {
-  :root { --fg:#e7eaf1; --muted:#9ba3b5; --bg:#12141a; --accent:#7ea8e8;
-          --rule:#272d3a; --panel:#1a1e26; }
+  :root { --fg:#f1efea; --muted:#a6a8ac; --bg:#161719; --accent:#f5c400;
+          --rule:#3a3d42; --panel:#222427; }
 }
 * { box-sizing: border-box; }
 body { margin:0; background:var(--bg); color:var(--fg);
-       font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
        -webkit-text-size-adjust:100%; }
-main { max-width:44rem; margin:0 auto; padding:3rem 1.4rem 5rem; }
-h1 { font-size:2.1rem; line-height:1.2; letter-spacing:-0.02em; margin:0 0 1.4rem; }
-h2 { font-size:1.15rem; margin:2.4rem 0 0.6rem; letter-spacing:-0.01em; }
+body::before { content:""; display:block; height:12px;
+       background:repeating-linear-gradient(-45deg, var(--hivis) 0 12px, #16171a 12px 24px); }
+main { max-width:44rem; margin:0 auto; padding:2.6rem 1.2rem 5rem; }
+h1, h2 { font-family:"Avenir Next Condensed","Arial Narrow",-apple-system,sans-serif;
+         font-stretch:condensed; font-weight:800; text-transform:none; }
+h1 { font-size:2.4rem; line-height:1.1; letter-spacing:-0.01em; margin:0 0 1.2rem; }
+h2 { font-size:1.3rem; margin:2.2rem 0 0.6rem; padding-bottom:0.3rem; border-bottom:1px solid var(--rule); }
 p, li { color:var(--muted); margin:0 0 1rem; }
 ul { padding-left:1.2rem; margin:0 0 1rem; }
 li { margin:0 0 0.45rem; }
-a { color:var(--accent); }
+a { color:var(--accent); text-decoration-thickness:2px; text-underline-offset:3px; }
 strong { color:var(--fg); }
-nav { border-bottom:1px solid var(--rule); padding-bottom:1rem; margin-bottom:2.2rem;
-      font-size:0.95rem; }
-nav a { margin-right:1.2rem; text-decoration:none; }
+nav { padding-bottom:1rem; margin-bottom:2rem; font-size:0.95rem; border-bottom:1px solid var(--rule); }
+nav a { margin-right:1.1rem; text-decoration:none; font-weight:700;
+        font-family:"Avenir Next Condensed","Arial Narrow",sans-serif; letter-spacing:0.04em;
+        text-transform:uppercase; }
+nav a:first-child { background:var(--hivis); color:#16171a; padding:0.15rem 0.5rem; border-radius:3px; }
 footer { border-top:1px solid var(--rule); margin-top:3.5rem; padding-top:1.2rem;
          font-size:0.85rem; color:var(--muted); }
 .lede { font-size:1.15rem; color:var(--fg); }
-.panel { background:var(--panel); border:1px solid var(--rule); border-radius:10px;
-         padding:1.1rem 1.3rem; margin:0 0 1.2rem; }
+.panel { background:var(--panel); border:1px solid var(--rule); border-left:5px solid var(--hivis);
+         border-radius:4px; padding:1rem 1.2rem; margin:0 0 1.2rem; }
 .panel p:last-child, .panel ul:last-child { margin-bottom:0; }
 </style>
 </head>
 <body>
 <main>
 <nav><a href="./">PunchList</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
-<h1>Support</h1><p>PunchList is made by one person. Email <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a> and you will get a reply, usually within two working days.</p><p>It helps to say which iOS version you are on and what you were doing at the time. Please do not email site photographs or client details — nothing about your projects is visible from this end.</p><h2>Where your data is</h2><p>Every project, item and photograph is stored on your device. There is no account and no server, so there is nothing to sign into and nothing to recover remotely. Deleting the app deletes the work with it — export first if you want to keep it.</p><div class="panel"><p><strong>Keep device backups switched on.</strong> If your phone is lost or wiped and you have no backup and no export, the punch list is gone and cannot be restored by anyone.</p></div><h2>Getting your work out</h2><ul><li><strong>PDF report</strong> — every item with its marked-up photos, grouped by location, trade, status or assignee. Project menu › Report &amp; export.</li><li><strong>CSV</strong> — the whole list as a spreadsheet, from the same screen.</li><li><strong>A single photo</strong> — open it in the markup editor and use Share; the marks are burned into the image.</li></ul><h2>Subscriptions</h2><p>The free tier covers one project of up to fifteen items, with photographs and full markup. Pro removes those limits and adds the PDF report and CSV export.</p><p>Manage or cancel in <strong>Settings › Apple Account › Subscriptions</strong> on your device. Cancelling stops the next renewal and does not delete anything — your items and photographs stay on the device, and the export features stop until you resubscribe.</p><p>Refunds are handled by Apple, not by the developer: <a href="https://support.apple.com/billing">Apple Support</a>.</p><p>If you have paid and the app still shows the free tier, use <strong>Restore</strong> on the upgrade screen while signed into the same Apple Account that bought it.</p><h2>Common questions</h2><p><strong>Can two people share a project?</strong> Not yet. Everything is on one device. Export the PDF or CSV to share the state of a job.</p><p><strong>Why did my item number not get reused?</strong> Deliberately. A reference like PL-014 gets quoted in emails and invoices long after the item is closed, so deleting an item never frees its number.</p><p><strong>Does it work with no signal?</strong> Yes. The app needs a connection only to fetch subscription prices.</p>
-<footer>PunchList — Site defect tracking with photo markup, for iOS. These documents are also bundled inside the app.</footer>
+<h1>Support</h1><p>PunchList is made by one person. Email <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a> and you will get a reply, usually within two working days.</p><p>It helps to say which iOS version you are on and what you were doing at the time. Please do not email site photographs or client details — nothing about your projects is visible from this end.</p><h2>Where your data is</h2><p>Every project, item and photograph is stored on your device. There is no account and no server, so there is nothing to sign into and nothing to recover remotely. Deleting the app deletes the work with it — export first if you want to keep it.</p><div class="panel"><p><strong>Keep device backups switched on.</strong> If your phone is lost or wiped and you have no backup and no export, the punch list is gone and cannot be restored by anyone.</p></div><h2>Getting your work out</h2><ul><li><strong>PDF report</strong> — every item with its marked-up photos, grouped by location, trade, status or assignee. The ⋯ menu on the site board › Handover report &amp; export.</li><li><strong>CSV</strong> — the whole list as a spreadsheet, from the same screen.</li><li><strong>A single photo</strong> — open it in the markup editor and use Share; the marks are burned into the image.</li></ul><h2>The Handover Pack</h2><p>The free plan covers one job of up to fifteen items, with photographs and full markup. The Handover Pack removes those limits and adds the PDF report and CSV export.</p><p>Manage or cancel in <strong>Settings › Apple Account › Subscriptions</strong> on your device. Cancelling stops the next renewal and does not delete anything — your items and photographs stay on the device, and the export features stop until you resubscribe.</p><p>Refunds are handled by Apple, not by the developer: <a href="https://support.apple.com/billing">Apple Support</a>.</p><p>If you have paid and the app still shows the free tier, use <strong>Restore</strong> on the Handover Pack screen while signed into the same Apple Account that bought it.</p><h2>Common questions</h2><p><strong>Can two people share a project?</strong> Not yet. Everything is on one device. Export the PDF or CSV to share the state of a job.</p><p><strong>Why did my item number not get reused?</strong> Deliberately. A reference like PL-014 gets quoted in emails and invoices long after the item is closed, so deleting an item never frees its number.</p><p><strong>Does it work with no signal?</strong> Yes. The app needs a connection only to fetch subscription prices.</p>
+<footer>PunchList — The defect list for a site walk: numbered tags, marked-up photos and one handover report. These documents are also bundled inside the app.</footer>
 </main>
 </body>
 </html>
